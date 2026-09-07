@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Portfolio of Indri Windriasari — Informatics graduate focused on Applied AI, workflow automation, and practical AI systems." />
+
+    <title>Indri Windriasari | Applied AI & Automation</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #0a0a0a;
+        color: #ededed;
+      }
+
+      .glass-card {
+        background: rgba(255, 255, 255, 0.025);
+        border: 1px solid rgba(255, 255, 255, 0.07);
+      }
+
+      .glass-card:hover {
+        border-color: rgba(255, 255, 255, 0.16);
+        background: rgba(255, 255, 255, 0.045);
+      }
+
+      .icon-stroke {
+        stroke-width: 1.5px;
+      }
+
+      .gradient-text {
+        background: linear-gradient(90deg, #ffffff 0%, #a3a3a3 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .section-label {
+        letter-spacing: 0.16em;
+      }
+
+      .profile-frame {
+        position: relative;
+        overflow: hidden;
+        border-radius: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+      }
+
+      .profile-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .profile-badge {
+        position: absolute;
+        left: 1rem;
+        bottom: 1rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        border-radius: 9999px;
+        background: rgba(10, 10, 10, 0.72);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #d4d4d4;
+      }
+
+      .project-preview {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        margin-bottom: 1.25rem;
+        background: #111111;
+      }
+
+      .brand-logo {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 9999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        color: #111111;
+        background: linear-gradient(135deg, #ffffff 0%, #c4c4c4 100%);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+      }
+    </style>
+  </head>
+
+  <body class="antialiased selection:bg-white selection:text-black">
+    <!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+    <nav class="max-w-6xl mx-auto px-6 py-7 flex justify-between items-center">
+      <a href="#" class="flex items-center gap-3 text-white font-medium tracking-tight">
+        <span class="brand-logo">IW</span>
+        <span>Indri Windriasari</span>
+      </a>
+
+      <div class="hidden md:flex gap-7 text-sm text-gray-500">
+        <a href="#work" class="hover:text-white transition">Work</a>
+        <a href="#experience" class="hover:text-white transition">Experience</a>
+        <a href="#research" class="hover:text-white transition">Research</a>
+        <a href="#skills" class="hover:text-white transition">Skills</a>
+      </div>
+    </nav>
+
+    <!-- =========================================================
+     HERO
+========================================================= -->
+
+    <header class="max-w-6xl mx-auto px-6 pt-20 pb-24">
+      <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
+        <div class="max-w-4xl">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 mb-7 text-xs font-medium tracking-wide uppercase text-gray-400 bg-gray-900 border border-gray-800 rounded-full">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+
+            Open to internship & work opportunities
+          </div>
+
+          <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-[1.05] mb-8">
+            Hi, I’m Indri Windriasari
+          </h1>
+
+          <p class="text-lg md:text-xl text-gray-400 max-w-2xl leading-relaxed mb-10">
+            I’m an
+            <span class="text-gray-200">Informatics graduate</span>
+            focused on
+            <span class="text-gray-200">Applied AI, workflow automation, and practical machine learning</span>
+            building systems that solve real-world problems and turn ideas into usable products.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="#work" class="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg text-sm font-semibold hover:bg-gray-200 transition">
+              View Projects
+
+              <i data-lucide="arrow-down" class="w-4 h-4 icon-stroke"></i>
+            </a>
+
+            <a href="https://github.com/driins" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border border-gray-700 text-white px-6 py-3 rounded-lg text-sm font-semibold hover:bg-gray-900 transition">
+              <i data-lucide="github" class="w-4 h-4 icon-stroke"></i>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="profile-frame h-[430px] md:h-[520px]">
+          <img src="images/indri-profile.jpg" alt="Indri Windriasari portrait" />
+          <!-- <div class="profile-badge">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
+            Open to internships & work
+          </div> -->
+        </div>
+      </div>
+
+      <!-- <div class="mt-8 flex flex-wrap gap-3 text-xs uppercase tracking-[0.14em] text-gray-500">
+        <span class="border border-gray-800 rounded-full px-3 py-2 bg-gray-950">Applied AI</span>
+        <span class="border border-gray-800 rounded-full px-3 py-2 bg-gray-950">Automation</span>
+        <span class="border border-gray-800 rounded-full px-3 py-2 bg-gray-950">Computer Vision</span>
+        <span class="border border-gray-800 rounded-full px-3 py-2 bg-gray-950">NLP</span>
+      </div> -->
+
+      <!-- QUICK PROOF -->
+<!-- 
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-y border-gray-900 py-10 mt-20">
+        <div>
+          <div class="text-3xl font-bold text-white mb-1">2,000+</div>
+
+          <div class="text-sm text-gray-500">Images annotated</div>
+        </div>
+
+        <div>
+          <div class="text-3xl font-bold text-white mb-1">184K+</div>
+
+          <div class="text-sm text-gray-500">Reviews processed</div>
+        </div>
+
+        <div>
+          <div class="text-3xl font-bold text-white mb-1">Q1</div>
+
+          <div class="text-sm text-gray-500">Scopus journal</div>
+        </div>
+
+        <div>
+          <div class="text-3xl font-bold text-white mb-1">1</div>
+
+          <div class="text-sm text-gray-500">Patent application</div>
+        </div> -->
+      </div>
+    </header>
+
+    <!-- =========================================================
+     POSITIONING / ABOUT
+========================================================= -->
+
+    <section class="max-w-6xl mx-auto px-6 py-20">
+      <div class="max-w-3xl">
+        <p class="section-label text-xs font-semibold text-gray-600 uppercase mb-5">What I Work On</p>
+
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6">From AI experiments to usable systems.</h2>
+
+        <p class="text-gray-400 leading-relaxed text-lg">
+          My work sits at the intersection of
+          <span class="text-gray-200">AI, automation, and software integration.</span>
+          I’m interested in what happens after an AI model works: how it connects to other systems, fits into a workflow, and becomes something people can actually use.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-12">
+        <!-- 01 -->
+
+        <div class="glass-card p-7 rounded-2xl transition">
+          <div class="text-xs text-gray-600 mb-6">01</div>
+
+          <h3 class="text-lg font-semibold mb-3">AI Applications</h3>
+
+          <p class="text-sm text-gray-400 leading-relaxed">Building and experimenting with practical AI applications, including computer vision, NLP, RAG, and machine learning models.</p>
+        </div>
+
+        <!-- 02 -->
+
+        <div class="glass-card p-7 rounded-2xl transition">
+          <div class="text-xs text-gray-600 mb-6">02</div>
+
+          <h3 class="text-lg font-semibold mb-3">Workflow Automation</h3>
+
+          <p class="text-sm text-gray-400 leading-relaxed">Connecting applications, APIs, and AI capabilities to automate repetitive processes and reduce unnecessary manual steps.</p>
+        </div>
+
+        <!-- 03 -->
+
+        <div class="glass-card p-7 rounded-2xl transition">
+          <div class="text-xs text-gray-600 mb-6">03</div>
+
+          <h3 class="text-lg font-semibold mb-3">System Integration</h3>
+
+          <p class="text-sm text-gray-400 leading-relaxed">Working across APIs, data, applications, and lightweight interfaces to turn individual tools into connected workflows.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     FEATURED WORK
+========================================================= -->
+
+    <section id="work" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-900">
+      <div class="mb-12">
+        <p class="section-label text-xs font-semibold text-gray-600 uppercase mb-5">Selected Work</p>
+
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Projects built around real problems.</h2>
+
+        <p class="text-gray-500 max-w-2xl leading-relaxed">A selection of applied AI and automation projects, from workflow systems and LLM applications to computer vision research.</p>
+      </div>
+
+      <!-- =====================================================
+         HERO PROJECT
+    ====================================================== -->
+
+      <div class="glass-card rounded-3xl overflow-hidden mb-8">
+        <div class="grid lg:grid-cols-2">
+          <div class="min-h-[340px] bg-[#0d0d0d] border-b lg:border-b-0 lg:border-r border-gray-800 flex items-center justify-center p-4">
+            <img class="project-preview" src="images/smart-patient-navigator-project.png" alt="Smart hospital workflow preview" />
+          </div>
+
+          <div class="p-8 md:p-10 flex flex-col justify-center">
+            <div class="text-xs font-semibold uppercase tracking-widest text-gray-600 mb-4">Featured · Applied AI</div>
+
+            <h3 class="text-2xl md:text-3xl font-bold mb-5">Smart Hospital Patient Navigator</h3>
+
+            <p class="text-gray-400 leading-relaxed mb-7">A Streamlit-based healthcare assistant that helps patients decide which department to visit by turning symptoms into a clear recommendation using a supervised learning model.</p>
+
+            <div class="mb-7">
+              <div class="text-sm font-semibold text-white mb-2">Problem</div>
+
+              <p class="text-sm text-gray-500 leading-relaxed">Patients struggle to identify the right hospital department quickly, which can lead to delayed treatment and confusion during the first visit.</p>
+            </div>
+
+            <div class="mb-7">
+              <div class="text-sm font-semibold text-white mb-2">Solution</div>
+
+              <p class="text-sm text-gray-500 leading-relaxed">The app combines symptom input, prediction logic, and a user-friendly interface to guide patients toward the most relevant service path.</p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mb-8">
+              <span class="px-3 py-1.5 text-xs rounded-md bg-gray-900 border border-gray-800 text-gray-400">Streamlit</span>
+              <span class="px-3 py-1.5 text-xs rounded-md bg-gray-900 border border-gray-800 text-gray-400">Python</span>
+              <span class="px-3 py-1.5 text-xs rounded-md bg-gray-900 border border-gray-800 text-gray-400">Healthcare AI</span>
+              <span class="px-3 py-1.5 text-xs rounded-md bg-gray-900 border border-gray-800 text-gray-400">ML</span>
+            </div>
+
+            <div class="flex gap-5">
+              <a href="https://driins-smarthospital.streamlit.app/" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white hover:text-gray-300 transition"> Open App → </a>
+
+              <a href="https://github.com/driins/smarthospital" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-gray-500 hover:text-white transition"> View Project → </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =====================================================
+         OTHER FEATURED PROJECTS
+    ====================================================== -->
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <article class="glass-card rounded-2xl p-6 transition flex flex-col">
+          <img class="project-preview" src="images/solar-defect-project.png" alt="Solar panel defect analysis preview" />
+
+          <div class="text-xs font-semibold uppercase tracking-widest text-gray-600 mb-4">Computer Vision · Research</div>
+
+          <div class="mb-3">
+            <span class="inline-flex items-center px-2.5 py-1 rounded-full border border-amber-500/20 bg-amber-500/5 text-[10px] font-semibold uppercase tracking-[0.18em] text-amber-300">Scopus Q1 • Elsevier • EAAI</span>
+          </div>
+
+          <h3 class="text-xl font-bold mb-3">Solar Panel Defect Detection</h3>
+
+          <p class="text-sm text-gray-400 leading-relaxed mb-6 flex-grow">Built an explainable AI solution to identify solar panel defects by combining deep learning with Grad-CAM visualization for clearer model interpretation.</p>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="tag">Python</span>
+            <span class="tag">VGG19</span>
+            <span class="tag">Grad-CAM</span>
+          </div>
+
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0952197626010900" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white hover:text-gray-300"> Read Publication → </a>
+        </article>
+
+        <article class="glass-card rounded-2xl p-6 transition flex flex-col">
+          <img class="project-preview" src="images/ai-notetaking-project.png" alt="AI note assistant preview" />
+
+          <div class="text-xs font-semibold uppercase tracking-widest text-gray-600 mb-4">Generative AI · RAG</div>
+
+          <h3 class="text-xl font-bold mb-3">Supernote AI</h3>
+
+          <p class="text-sm text-gray-400 leading-relaxed mb-6 flex-grow">
+            Built a modern AI-powered note-taking product that goes beyond basic note storage. The app supports semantic search and an AI assistant that answers questions using the user’s personal notes, turning everyday notes into an
+            intelligent knowledge base.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="tag">Semantic Search</span>
+            <span class="tag">AI Chatbot</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Gemini AI</span>
+            <span class="tag">Vector Embedding</span>
+          </div>
+        </article>
+
+        <article class="glass-card rounded-2xl p-6 transition flex flex-col">
+          <img class="project-preview" src="images/smart-glasses-project.png" alt="Smart glasses dataset preview" />
+
+          <div class="text-xs font-semibold uppercase tracking-widest text-gray-600 mb-4">Computer Vision · Research</div>
+
+          <h3 class="text-xl font-bold mb-3">Smart Glasses Object Recognition</h3>
+
+          <p class="text-sm text-gray-400 leading-relaxed mb-6 flex-grow">Executed precise data annotation on 2,000+ images across 12 classes using Roboflow, ensuring dataset quality control for training YOLOv8 object detection models in smart-glasses vision systems.</p>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="tag">YOLOv8</span>
+            <span class="tag">Roboflow</span>
+            <span class="tag">OpenCV</span>
+          </div>
+
+          <div class="text-xs text-gray-500">Patent Application · EC002024192839</div>
+        </article>
+
+        <article class="glass-card rounded-2xl p-6 transition flex flex-col">
+          <img class="project-preview" src="images/ootd-ai-project.png" alt="AI video generation preview" />
+
+          <div class="text-xs font-semibold uppercase tracking-widest text-gray-600 mb-4">AI Automation · Generative AI</div>
+
+          <h3 class="text-xl font-bold mb-3">OOTD Video Generator</h3>
+
+          <p class="text-sm text-gray-400 leading-relaxed mb-6 flex-grow">
+            Built an automated content workflow using n8n and Telegram Bot to turn product assets into AI-generated outfit videos with Veo 3, making fashion publishing faster and more scalable.
+          </p>
+
+          <div class="flex flex-wrap gap-2 mb-6">
+            <span class="tag">n8n</span>
+            <span class="tag">Telegram</span>
+            <span class="tag">AI Video</span>
+            <span class="tag">Veo 3</span>
+          </div>
+
+          <a href="https://drive.google.com/drive/folders/1fX147GE0at-pK_0NtpfyEVZ2sK_431dv?usp=drive_link" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white hover:text-gray-300"> View Project → </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     OTHER PROJECTS
+========================================================= -->
+
+    <section class="max-w-6xl mx-auto px-6 py-20">
+      <div class="mb-10">
+        <p class="section-label text-xs font-semibold text-gray-600 uppercase mb-5">Other Projects</p>
+
+        <h2 class="text-2xl md:text-3xl font-bold">More experiments and applications.</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-5">
+        <article class="glass-card rounded-xl p-6">
+          <div class="text-xs text-gray-600 mb-4">NLP · Machine Learning</div>
+
+          <h3 class="font-semibold mb-2">HukumQ</h3>
+
+          <p class="text-sm text-gray-500 leading-relaxed">A question-and-answer chatbot developed as part of the Bangkit Academy final project, exploring NLP and TensorFlow for legal-domain questions.</p>
+
+          <a href="https://www.youtube.com/watch?v=iptDtX3ETdw" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-white hover:text-gray-300"> Watch Demo → </a>
+        </article>
+
+        <article class="glass-card rounded-xl p-6">
+          <div class="text-xs text-gray-600 mb-4">NLP · Data</div>
+
+          <h3 class="font-semibold mb-2">PLN Mobile Sentiment Analysis</h3>
+
+          <p class="text-sm text-gray-500 leading-relaxed">Processed 184,500 raw app reviews through an NLP pipeline to explore sentiment patterns and user feedback.</p>
+
+          <a href="https://github.com/driins/data-portofolio/tree/main/projects/01-sentiment-analysis-pln-mobile-app" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-white hover:text-gray-300">
+            View project →
+          </a>
+        </article>
+
+        <article class="glass-card rounded-xl p-6">
+          <div class="text-xs text-gray-600 mb-4">Machine Learning</div>
+
+          <h3 class="font-semibold mb-2">Hospital Patient Navigator</h3>
+
+          <p class="text-sm text-gray-500 leading-relaxed">A supervised-learning prototype designed to recommend relevant hospital departments based on reported symptoms.</p>
+
+          <a href="https://github.com/driins/smarthospital" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-white hover:text-gray-300"> GitHub → </a>
+        </article>
+
+        <article class="glass-card rounded-xl p-6">
+          <div class="text-xs text-gray-600 mb-4">Data Analytics</div>
+
+          <h3 class="font-semibold mb-2">Margin Leakage Detection</h3>
+
+          <p class="text-sm text-gray-500 leading-relaxed">Audited 5,000+ sales records using SQL and Pandas to identify pricing anomalies and potential margin leakage of Rp55.4 million.</p>
+
+          <a href="https://github.com/driins/margin_leakage" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm font-semibold text-white hover:text-gray-300"> View project → </a>
+        </article>
+
+        <article class="glass-card rounded-xl p-6">
+          <div class="text-xs text-gray-600 mb-4">Data Quality</div>
+
+          <h3 class="font-semibold mb-2">Product Master Data Standardization</h3>
+
+          <p class="text-sm text-gray-500 leading-relaxed">Used Python, Pandas, and fuzzy matching to clean and consolidate 700+ fragmented product records.</p>
+
+          <a
+            href="https://script.google.com/macros/s/AKfycbwH9mAhPrywLdEDe1pc8oTiq9AvZx-R-HCPHl-kBDgDjLQ2JtlmNwqidrHDf2lkjOr6/exec?page=MDM_Pipeline"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-4 inline-block text-sm font-semibold text-white hover:text-gray-300"
+          >
+            View Project →
+          </a>
+        </article>
+
+        <article class="glass-card rounded-xl p-6">
+          <div class="text-xs text-gray-600 mb-4">Business Intelligence</div>
+
+          <h3 class="font-semibold mb-2">Global Coffee Sales Dashboard</h3>
+
+          <p class="text-sm text-gray-500 leading-relaxed">Built an interactive Excel dashboard to explore sales trends, product performance, and retail metrics.</p>
+
+          <div class="mt-4 flex flex-col gap-2">
+            <a
+              href="https://script.google.com/macros/s/AKfycbwH9mAhPrywLdEDe1pc8oTiq9AvZx-R-HCPHl-kBDgDjLQ2JtlmNwqidrHDf2lkjOr6/exec?page=Coffee"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm font-semibold text-white hover:text-gray-300"
+            >
+              View Projects → </a
+            ><a href="https://coffeesalesdashboard.vercel.app/" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white hover:text-gray-300"> View Dashboard → </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     EXPERIENCE
+========================================================= -->
+
+    <section id="experience" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-900">
+      <div class="mb-12">
+        <p class="section-label text-xs font-semibold text-gray-600 uppercase mb-5">Experience</p>
+
+        <h2 class="text-3xl md:text-4xl font-bold">Where I’ve applied these skills.</h2>
+      </div>
+
+      <div class="space-y-12">
+        <!-- KodingNext -->
+
+        <div class="grid md:grid-cols-4 gap-5">
+          <div class="text-sm text-gray-600">Apr 2026 — Aug 2026</div>
+
+          <div class="md:col-span-3">
+            <h3 class="text-lg font-semibold mb-1">Advanced Programming Teacher</h3>
+
+            <div class="text-sm text-gray-500 mb-4">KodingNext · Tasikmalaya</div>
+
+            <p class="text-sm text-gray-400 leading-relaxed max-w-3xl">
+              Conducted code reviews and real-time software/hardware setup, troubleshooting, error handling, debugging for an average of 5+ technical bottlenecks per session. Mentored 40+ students in developing Python, AI, and project-based programming applications.
+            </p>
+          </div>
+        </div>
+
+        <!-- Lab -->
+
+        <div class="grid md:grid-cols-4 gap-5">
+          <div class="text-sm text-gray-600">Oct 2024 — Mar 2025</div>
+
+          <div class="md:col-span-3">
+            <h3 class="text-lg font-semibold mb-1">Software Engineering & Database Lab Assistant</h3>
+
+            <div class="text-sm text-gray-500 mb-4">Universitas Siliwangi</div>
+
+            <p class="text-sm text-gray-400 leading-relaxed max-w-3xl">
+              Supported 150+ students during database and software engineering practical sessions. Assisted with SQL, database architecture, software troubleshooting, Git/GitHub, and reviewed 20+ student database projects while producing standardized lab documentation for four modules.
+            </p>
+          </div>
+        </div>
+
+        <!-- Research -->
+
+        <div class="grid md:grid-cols-4 gap-5">
+          <div class="text-sm text-gray-600">Jul 2024 — Nov 2024</div>
+
+          <div class="md:col-span-3">
+            <h3 class="text-lg font-semibold mb-1">Research Assistant — Artificial Intelligence</h3>
+
+            <div class="text-sm text-gray-500 mb-4">AIS Research · Universitas Siliwangi</div>
+
+            <p class="text-sm text-gray-400 leading-relaxed max-w-3xl">
+              Contributed to a computer vision research project for smart glasses. Annotated and quality-checked 2,000+ images across 12 object classes using Roboflow, while maintaining dataset organization and annotation consistency for
+              model training.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bangkit -->
+
+        <div class="grid md:grid-cols-4 gap-5">
+          <div class="text-sm text-gray-600">Aug 2023 — Jan 2024</div>
+
+          <div class="md:col-span-3">
+            <h3 class="text-lg font-semibold mb-1">Machine Learning Cohort</h3>
+
+            <div class="text-sm text-gray-500 mb-4">Bangkit Academy · Google, GoTo & Traveloka</div>
+
+            <p class="text-sm text-gray-400 leading-relaxed max-w-3xl">
+              Completed an intensive Machine Learning program focused on predictive modeling, applied AI, and machine learning development. Earned the TensorFlow Developer certification.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     RESEARCH & RECOGNITION
+========================================================= -->
+
+    <section id="research" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-900">
+      <div class="mb-12">
+        <p class="section-label text-xs font-semibold text-gray-600 uppercase mb-5">Research & Recognition</p>
+
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Evidence beyond the projects.</h2>
+
+        <p class="text-gray-500 max-w-2xl">Research, competitions, and technical work that support my interest in applied AI.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Publication -->
+
+        <article class="glass-card rounded-2xl p-8">
+          <div class="flex items-start justify-between gap-5 mb-6">
+            <div>
+              <div class="text-xs text-gray-600 uppercase tracking-widest mb-2">Publication</div>
+
+              <h3 class="text-xl font-semibold">Scopus Q1 Journal Publication</h3>
+            </div>
+
+            <i data-lucide="file-text" class="w-5 h-5 text-gray-600 icon-stroke"></i>
+          </div>
+
+          <p class="text-sm text-gray-400 leading-relaxed mb-5">Published research on solar panel defect detection using Modified VGG19-GradCAM, covering model development, experimentation, evaluation, and explainable AI analysis.</p>
+
+          <p class="text-xs text-gray-600 mb-5">Engineering Applications of Artificial Intelligence · Elsevier</p>
+
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0952197626010900" target="_blank" rel="noopener noreferrer" class="text-sm text-white font-semibold hover:text-gray-300"> Read Publication → </a>
+        </article>
+
+        <!-- Patent -->
+
+        <article class="glass-card rounded-2xl p-8">
+          <div class="flex items-start justify-between gap-5 mb-6">
+            <div>
+              <div class="text-xs text-gray-600 uppercase tracking-widest mb-2">Intellectual Property</div>
+
+              <h3 class="text-xl font-semibold">Patent Application</h3>
+            </div>
+
+            <i data-lucide="lightbulb" class="w-5 h-5 text-gray-600 icon-stroke"></i>
+          </div>
+
+          <p class="text-sm text-gray-400 leading-relaxed mb-5">Contributed as a research assistant to “Relative Partial Self-Attention for Object Recognition in Smart Glasses Based on Contextual Adaptation.”</p>
+
+          <p class="text-xs text-gray-600">Application No. EC002024192839</p>
+        </article>
+
+        <!-- QRIS -->
+
+        <article class="glass-card rounded-2xl p-8">
+          <div class="text-xs text-gray-600 uppercase tracking-widest mb-2">Competition</div>
+
+          <h3 class="text-xl font-semibold mb-4">2nd Winner — QRIS Jelajah Budaya</h3>
+
+          <p class="text-sm text-gray-400 leading-relaxed">Contributed to a culture-based campaign concept for QRIS adoption, involving stakeholder collaboration and campaign impact tracking.</p>
+
+          <p class="text-xs text-gray-600 mt-5">Bank Indonesia · 2025</p>
+        </article>
+
+        <!-- SheHacks -->
+
+        <article class="glass-card rounded-2xl p-8">
+          <div class="text-xs text-gray-600 uppercase tracking-widest mb-2">Competition</div>
+
+          <h3 class="text-xl font-semibold mb-4">Top 5 — SheHacks Ideation</h3>
+
+          <p class="text-sm text-gray-400 leading-relaxed">Developed WISSH, an integrated platform concept involving problem identification, user validation, and pitching to industry executives.</p>
+
+          <p class="text-xs text-gray-600 mt-5">Indosat Ooredoo Hutchison · 2025</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SKILLS
+========================================================= -->
+
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-900">
+      <div class="mb-12">
+        <p class="section-label text-xs font-semibold text-gray-600 uppercase mb-5">Tech Stack</p>
+
+        <h2 class="text-3xl md:text-4xl font-bold">Tools I work with.</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-x-16 gap-y-12">
+        <div>
+          <h3 class="text-sm font-semibold text-white mb-4">AI & Machine Learning</h3>
+
+          <p class="text-sm text-gray-500 leading-relaxed">Python · TensorFlow · Scikit-learn · YOLOv8 · Computer Vision · NLP · RAG · LLM · Roboflow · Grad-CAM</p>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold text-white mb-4">Automation & Integration</h3>
+
+          <p class="text-sm text-gray-500 leading-relaxed">n8n · Make · Zapier · REST API · Webhooks · Workflow Automation · System Integration</p>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold text-white mb-4">AI Application Development</h3>
+
+          <p class="text-sm text-gray-500 leading-relaxed">FastAPI · Streamlit · Git · GitHub</p>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-semibold text-white mb-4">Data & Supporting Tools</h3>
+
+          <p class="text-sm text-gray-500 leading-relaxed">SQL · Pandas · Microsoft Excel · Looker Studio · Tableau</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CERTIFICATION & EDUCATION
+========================================================= -->
+
+    <section class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-900">
+      <div class="grid md:grid-cols-2 gap-16">
+        <!-- Certifications -->
+
+        <div>
+          <p class="section-label text-xs font-semibold text-gray-600 uppercase mb-5">Certifications</p>
+
+          <div class="space-y-5">
+            <div>
+              <a href="https://drive.google.com/file/d/1tZ031q5R8Ntzq1K0k-OzDazGe44yxj8E/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="font-semibold text-white hover:text-gray-300 transition inline-block">ICT Project Manager</a>
+
+              <p class="text-sm text-gray-600 mt-1">BNSP · Valid through 2028</p>
+            </div>
+
+            <div>
+              <a href="https://images.credential.net/embed/adhteq2k_1722887806162.png" target="_blank" rel="noopener noreferrer" class="font-semibold text-white hover:text-gray-300 transition inline-block">TensorFlow Developer</a>
+
+              <p class="text-sm text-gray-600 mt-1">Google · Valid through 2027</p>
+            </div>
+
+            <div>
+              <a href="https://www.credly.com/badges/a5330358-7a39-413a-8aaf-858ca6541c2c" target="_blank" rel="noopener noreferrer" class="font-semibold text-white hover:text-gray-300 transition inline-block">Microsoft Excel Associate</a>
+
+              <p class="text-sm text-gray-600 mt-1">Microsoft</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+
+        <div>
+          <p class="section-label text-xs font-semibold text-gray-600 uppercase mb-5">Education</p>
+
+          <h3 class="text-xl font-semibold text-white mb-2">Bachelor of Informatics</h3>
+
+          <p class="text-sm text-gray-500 mb-3">Universitas Siliwangi · 2021 — 2025</p>
+
+          <div class="mt-4">
+            <a href="https://drive.google.com/file/d/1ngNKG3RbHAnvocfunOYzuItV05zpSF5W/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="text-sm text-white font-semibold hover:text-gray-300 transition inline-block">
+              Bangkit Academy 2023 by Google, GoTo, & Traveloka →
+            </a>
+            <p class="text-sm text-gray-500 mt-2">Machine Learning Track</p>
+          </div>
+
+          <p class="text-sm text-gray-400 mt-4">GPA <span class="text-white font-medium">3.77</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     CONTACT
+========================================================= -->
+
+    <footer class="max-w-6xl mx-auto px-6 pt-24 pb-12 border-t border-gray-900">
+      <div class="max-w-2xl">
+        <p class="section-label text-xs font-semibold text-gray-600 uppercase mb-5">Get in touch</p>
+
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">Let's build something useful.</h2>
+
+        <p class="text-gray-500 leading-relaxed mb-8">I'm interested in opportunities where Applied AI, automation, and software come together to solve practical problems.</p>
+
+        <div class="flex flex-wrap gap-6 text-sm">
+          <a href="mailto:indriwindriasari2511@gmail.com" class="text-gray-300 hover:text-white transition"> Email </a>
+
+          <a href="https://linkedin.com/in/indriwindriasari" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition"> LinkedIn </a>
+
+          <a href="https://github.com/driins" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition"> GitHub </a>
+        </div>
+      </div>
+
+      <div class="flex justify-between items-center mt-20 pt-6 border-t border-gray-900">
+        <p class="text-xs text-gray-700">© 2026 Indri Windriasari</p>
+
+        <p class="text-xs text-gray-700">Applied AI · Automation · Software</p>
+      </div>
+    </footer>
+
+    <!-- =========================================================
+     SMALL COMPONENT STYLES
+========================================================= -->
+
+    <style>
+      .tag {
+        display: inline-block;
+        padding: 0.375rem 0.625rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        color: #737373;
+        background: #0d0d0d;
+        border: 1px solid #262626;
+        border-radius: 0.375rem;
+      }
+    </style>
+
+    <!-- =========================================================
+     ICON INITIALIZATION
+========================================================= -->
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
